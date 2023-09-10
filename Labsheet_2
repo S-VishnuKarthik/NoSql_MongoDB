@@ -1,0 +1,1280 @@
+///////////////////////CREATE Operation /////////////////////////////
+use lab2
+ switched to db lab2
+
+show collections
+ Crud295
+
+db.Crud295.insertMany([
+    { "_id": 3, roll: "0002", name: "Mohan", section: "5CSE6", "CSE3001": 100, "CSE3075": 85, "CSE3078": 100, "CSE3082": 130, "CSE3069": 120, "CSE2024": 100, "CSE2052": 79 },
+    { "_id": 4, roll: "0003", name: "Rohan", section: "5CSE6", "CSE3001": 95, "CSE3075": 80, "CSE3078": 105, "CSE3082": 125, "CSE3069": 110, "CSE2024": 105, "CSE2052": 81 },
+    { "_id": 5, roll: "0004", name: "Sohan", section: "5CSE6", "CSE3001": 98, "CSE3075": 82, "CSE3078": 102, "CSE3082": 128, "CSE3069": 115, "CSE2024": 103, "CSE2052": 83 },
+    { "_id": 6, roll: "0005", name: "Pooja", section: "5CSE6", "CSE3001": 99, "CSE3075": 84, "CSE3078": 106, "CSE3082": 129, "CSE3069": 119, "CSE2024": 108, "CSE2052": 86 },
+    { "_id": 7, roll: "0006", name: "Aman", section: "5CSE6", "CSE3001": 94, "CSE3075": 81, "CSE3078": 101, "CSE3082": 123, "CSE3069": 112, "CSE2024": 107, "CSE2052": 88 },
+    { "_id": 8, roll: "0007", name: "Ritu", section: "5CSE6", "CSE3001": 96, "CSE3075": 87, "CSE3078": 104, "CSE3082": 132, "CSE3069": 117, "CSE2024": 110, "CSE2052": 80 },
+    { "_id": 9, roll: "0008", name: "Ankit", section: "5CSE6", "CSE3001": 97, "CSE3075": 86, "CSE3078": 107, "CSE3082": 124, "CSE3069": 118, "CSE2024": 102, "CSE2052": 78 },
+    { "_id": 10, roll: "0009", name: "Priya", section: "5CSE6", "CSE3001": 93, "CSE3075": 83, "CSE3078": 99, "CSE3082": 127, "CSE3069": 113, "CSE2024": 106, "CSE2052": 89 },
+    { "_id": 11, roll: "0010", name: "Vikas", section: "5CSE6", "CSE3001": 92, "CSE3075": 89, "CSE3078": 98, "CSE3082": 126, "CSE3069": 111, "CSE2024": 109, "CSE2052": 85 },
+    { "_id": 12, roll: "0011", name: "Neha", section: "5CSE6", "CSE3001": 91, "CSE3075": 88, "CSE3078": 97, "CSE3082": 121, "CSE3069": 114, "CSE2024": 104, "CSE2052": 87 }
+]);
+
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': 3,
+    '1': 4,
+    '2': 5,
+    '3': 6,
+    '4': 7,
+    '5': 8,
+    '6': 9,
+    '7': 10,
+    '8': 11,
+    '9': 12
+  }
+}
+
+///////////////////////READ /RETRIEVAL operation /////////////////////////
+
+db.Crud295.find()
+{
+  _id: 3,
+  roll: '0002',
+  name: 'Mohan',
+  section: '5CSE6',
+  CSE3001: 100,
+  CSE3075: 85,
+  CSE3078: 100,
+  CSE3082: 130,
+  CSE3069: 120,
+  CSE2024: 100,
+  CSE2052: 79
+}
+
+{
+  _id: 4,
+  roll: '0003',
+  name: 'Rohan',
+  section: '5CSE6',
+  CSE3001: 95,
+  CSE3075: 80,
+  CSE3078: 105,
+  CSE3082: 125,
+  CSE3069: 110,
+  CSE2024: 105,
+  CSE2052: 81
+}
+
+{
+  _id: 5,
+  roll: '0004',
+  name: 'Sohan',
+  section: '5CSE6',
+  CSE3001: 98,
+  CSE3075: 82,
+  CSE3078: 102,
+  CSE3082: 128,
+  CSE3069: 115,
+  CSE2024: 103,
+  CSE2052: 83
+}
+
+{
+  _id: 6,
+  roll: '0005',
+  name: 'Pooja',
+  section: '5CSE6',
+  CSE3001: 99,
+  CSE3075: 84,
+  CSE3078: 106,
+  CSE3082: 129,
+  CSE3069: 119,
+  CSE2024: 108,
+  CSE2052: 86
+}
+
+{
+  _id: 7,
+  roll: '0006',
+  name: 'Aman',
+  section: '5CSE6',
+  CSE3001: 94,
+  CSE3075: 81,
+  CSE3078: 101,
+  CSE3082: 123,
+  CSE3069: 112,
+  CSE2024: 107,
+  CSE2052: 88
+}
+
+{
+  _id: 8,
+  roll: '0007',
+  name: 'Ritu',
+  section: '5CSE6',
+  CSE3001: 96,
+  CSE3075: 87,
+  CSE3078: 104,
+  CSE3082: 132,
+  CSE3069: 117,
+  CSE2024: 110,
+  CSE2052: 80
+}
+
+{
+  _id: 9,
+  roll: '0008',
+  name: 'Ankit',
+  section: '5CSE6',
+  CSE3001: 97,
+  CSE3075: 86,
+  CSE3078: 107,
+  CSE3082: 124,
+  CSE3069: 118,
+  CSE2024: 102,
+  CSE2052: 78
+}
+
+{
+  _id: 10,
+  roll: '0009',
+  name: 'Priya',
+  section: '5CSE6',
+  CSE3001: 93,
+  CSE3075: 83,
+  CSE3078: 99,
+  CSE3082: 127,
+  CSE3069: 113,
+  CSE2024: 106,
+  CSE2052: 89
+}
+
+{
+  _id: 11,
+  roll: '0010',
+  name: 'Vikas',
+  section: '5CSE6',
+  CSE3001: 92,
+  CSE3075: 89,
+  CSE3078: 98,
+  CSE3082: 126,
+  CSE3069: 111,
+  CSE2024: 109,
+  CSE2052: 85
+}
+
+{
+  _id: 12,
+  roll: '0011',
+  name: 'Neha',
+  section: '5CSE6',
+  CSE3001: 91,
+  CSE3075: 88,
+  CSE3078: 97,
+  CSE3082: 121,
+  CSE3069: 114,
+  CSE2024: 104,
+  CSE2052: 87
+}
+
+
+
+db.Crud295.find({section:"5CSE6"})
+{
+  _id: 3,
+  roll: '0002',
+  name: 'Mohan',
+  section: '5CSE6',
+  CSE3001: 100,
+  CSE3075: 85,
+  CSE3078: 100,
+  CSE3082: 130,
+  CSE3069: 120,
+  CSE2024: 100,
+  CSE2052: 79
+}
+
+{
+  _id: 4,
+  roll: '0003',
+  name: 'Rohan',
+  section: '5CSE6',
+  CSE3001: 95,
+  CSE3075: 80,
+  CSE3078: 105,
+  CSE3082: 125,
+  CSE3069: 110,
+  CSE2024: 105,
+  CSE2052: 81
+}
+
+
+{
+  _id: 5,
+  roll: '0004',
+  name: 'Sohan',
+  section: '5CSE6',
+  CSE3001: 98,
+  CSE3075: 82,
+  CSE3078: 102,
+  CSE3082: 128,
+  CSE3069: 115,
+  CSE2024: 103,
+  CSE2052: 83
+}
+
+{
+  _id: 6,
+  roll: '0005',
+  name: 'Pooja',
+  section: '5CSE6',
+  CSE3001: 99,
+  CSE3075: 84,
+  CSE3078: 106,
+  CSE3082: 129,
+  CSE3069: 119,
+  CSE2024: 108,
+  CSE2052: 86
+}
+
+
+{
+  _id: 7,
+  roll: '0006',
+  name: 'Aman',
+  section: '5CSE6',
+  CSE3001: 94,
+  CSE3075: 81,
+  CSE3078: 101,
+  CSE3082: 123,
+  CSE3069: 112,
+  CSE2024: 107,
+  CSE2052: 88
+}
+
+
+{
+  _id: 8,
+  roll: '0007',
+  name: 'Ritu',
+  section: '5CSE6',
+  CSE3001: 96,
+  CSE3075: 87,
+  CSE3078: 104,
+  CSE3082: 132,
+  CSE3069: 117,
+  CSE2024: 110,
+  CSE2052: 80
+}
+
+
+{
+  _id: 9,
+  roll: '0008',
+  name: 'Ankit',
+  section: '5CSE6',
+  CSE3001: 97,
+  CSE3075: 86,
+  CSE3078: 107,
+  CSE3082: 124,
+  CSE3069: 118,
+  CSE2024: 102,
+  CSE2052: 78
+}
+
+{
+  _id: 10,
+  roll: '0009',
+  name: 'Priya',
+  section: '5CSE6',
+  CSE3001: 93,
+  CSE3075: 83,
+  CSE3078: 99,
+  CSE3082: 127,
+  CSE3069: 113,
+  CSE2024: 106,
+  CSE2052: 89
+}
+
+{
+  _id: 10,
+  roll: '0009',
+  name: 'Priya',
+  section: '5CSE6',
+  CSE3001: 93,
+  CSE3075: 83,
+  CSE3078: 99,
+  CSE3082: 127,
+  CSE3069: 113,
+  CSE2024: 106,
+  CSE2052: 89
+}
+
+{
+  _id: 12,
+  roll: '0011',
+  name: 'Neha',
+  section: '5CSE6',
+  CSE3001: 91,
+  CSE3075: 88,
+  CSE3078: 97,
+  CSE3082: 121,
+  CSE3069: 114,
+  CSE2024: 104,
+  CSE2052: 87
+}
+
+
+db.Crud295.find({$and:[{"CSE3078":{$gt:105}},{"section":"5CSE6"}]})
+{
+  _id: 6,
+  roll: '0005',
+  name: 'Pooja',
+  section: '5CSE6',
+  CSE3001: 99,
+  CSE3075: 84,
+  CSE3078: 106,
+  CSE3082: 129,
+  CSE3069: 119,
+  CSE2024: 108,
+  CSE2052: 86
+}
+
+
+{
+  _id: 9,
+  roll: '0008',
+  name: 'Ankit',
+  section: '5CSE6',
+  CSE3001: 97,
+  CSE3075: 86,
+  CSE3078: 107,
+  CSE3082: 124,
+  CSE3069: 118,
+  CSE2024: 102,
+  CSE2052: 78
+}
+
+
+
+///////////////// comparison operators///////////////////////////
+
+
+db.Crud295.find({CSE3001:{$gt:100}})
+
+db.Crud295.find({CSE3075:{$gte:100}})
+
+db.Crud295.find({CSE3078:{$lt:90}})
+
+db.Crud295.find({CSE3082:{$lte:80}})
+
+db.Crud295.find({CSE3069:{$ne:110}})
+{
+  _id: 3,
+  roll: '0002',
+  name: 'Mohan',
+  section: '5CSE6',
+  CSE3001: 100,
+  CSE3075: 85,
+  CSE3078: 100,
+  CSE3082: 130,
+  CSE3069: 120,
+  CSE2024: 100,
+  CSE2052: 79
+}
+
+
+{
+  _id: 5,
+  roll: '0004',
+  name: 'Sohan',
+  section: '5CSE6',
+  CSE3001: 98,
+  CSE3075: 82,
+  CSE3078: 102,
+  CSE3082: 128,
+  CSE3069: 115,
+  CSE2024: 103,
+  CSE2052: 83
+}
+
+
+{
+  _id: 6,
+  roll: '0005',
+  name: 'Pooja',
+  section: '5CSE6',
+  CSE3001: 99,
+  CSE3075: 84,
+  CSE3078: 106,
+  CSE3082: 129,
+  CSE3069: 119,
+  CSE2024: 108,
+  CSE2052: 86
+}
+
+
+{
+  _id: 7,
+  roll: '0006',
+  name: 'Aman',
+  section: '5CSE6',
+  CSE3001: 94,
+  CSE3075: 81,
+  CSE3078: 101,
+  CSE3082: 123,
+  CSE3069: 112,
+  CSE2024: 107,
+  CSE2052: 88
+}
+
+
+{
+  _id: 8,
+  roll: '0007',
+  name: 'Ritu',
+  section: '5CSE6',
+  CSE3001: 96,
+  CSE3075: 87,
+  CSE3078: 104,
+  CSE3082: 132,
+  CSE3069: 117,
+  CSE2024: 110,
+  CSE2052: 80
+}
+
+
+{
+  _id: 9,
+  roll: '0008',
+  name: 'Ankit',
+  section: '5CSE6',
+  CSE3001: 97,
+  CSE3075: 86,
+  CSE3078: 107,
+  CSE3082: 124,
+  CSE3069: 118,
+  CSE2024: 102,
+  CSE2052: 78
+}
+
+{
+  _id: 10,
+  roll: '0009',
+  name: 'Priya',
+  section: '5CSE6',
+  CSE3001: 93,
+  CSE3075: 83,
+  CSE3078: 99,
+  CSE3082: 127,
+  CSE3069: 113,
+  CSE2024: 106,
+  CSE2052: 89
+}
+
+{
+  _id: 11,
+  roll: '0010',
+  name: 'Vikas',
+  section: '5CSE6',
+  CSE3001: 92,
+  CSE3075: 89,
+  CSE3078: 98,
+  CSE3082: 126,
+  CSE3069: 111,
+  CSE2024: 109,
+  CSE2052: 85
+}
+
+{
+  _id: 12,
+  roll: '0011',
+  name: 'Neha',
+  section: '5CSE6',
+  CSE3001: 91,
+  CSE3075: 88,
+  CSE3078: 97,
+  CSE3082: 121,
+  CSE3069: 114,
+  CSE2024: 104,
+  CSE2052: 87
+}
+
+
+db.Crud295.find({CSE2024:{$in:[100,110,120]}})
+{
+  _id: 3,
+  roll: '0002',
+  name: 'Mohan',
+  section: '5CSE6',
+  CSE3001: 100,
+  CSE3075: 85,
+  CSE3078: 100,
+  CSE3082: 130,
+  CSE3069: 120,
+  CSE2024: 100,
+  CSE2052: 79
+}
+
+{
+  _id: 8,
+  roll: '0007',
+  name: 'Ritu',
+  section: '5CSE6',
+  CSE3001: 96,
+  CSE3075: 87,
+  CSE3078: 104,
+  CSE3082: 132,
+  CSE3069: 117,
+  CSE2024: 110,
+  CSE2052: 80
+}
+
+
+db.Crud295.find({CSE2052:{$nin:[85,89]}})
+{
+  _id: 3,
+  roll: '0002',
+  name: 'Mohan',
+  section: '5CSE6',
+  CSE3001: 100,
+  CSE3075: 85,
+  CSE3078: 100,
+  CSE3082: 130,
+  CSE3069: 120,
+  CSE2024: 100,
+  CSE2052: 79
+}
+
+{
+  _id: 4,
+  roll: '0003',
+  name: 'Rohan',
+  section: '5CSE6',
+  CSE3001: 95,
+  CSE3075: 80,
+  CSE3078: 105,
+  CSE3082: 125,
+  CSE3069: 110,
+  CSE2024: 105,
+  CSE2052: 81
+}
+
+{
+  _id: 5,
+  roll: '0004',
+  name: 'Sohan',
+  section: '5CSE6',
+  CSE3001: 98,
+  CSE3075: 82,
+  CSE3078: 102,
+  CSE3082: 128,
+  CSE3069: 115,
+  CSE2024: 103,
+  CSE2052: 83
+}
+
+{
+  _id: 6,
+  roll: '0005',
+  name: 'Pooja',
+  section: '5CSE6',
+  CSE3001: 99,
+  CSE3075: 84,
+  CSE3078: 106,
+  CSE3082: 129,
+  CSE3069: 119,
+  CSE2024: 108,
+  CSE2052: 86
+}
+
+{
+  _id: 7,
+  roll: '0006',
+  name: 'Aman',
+  section: '5CSE6',
+  CSE3001: 94,
+  CSE3075: 81,
+  CSE3078: 101,
+  CSE3082: 123,
+  CSE3069: 112,
+  CSE2024: 107,
+  CSE2052: 88
+}
+
+{
+  _id: 8,
+  roll: '0007',
+  name: 'Ritu',
+  section: '5CSE6',
+  CSE3001: 96,
+  CSE3075: 87,
+  CSE3078: 104,
+  CSE3082: 132,
+  CSE3069: 117,
+  CSE2024: 110,
+  CSE2052: 80
+}
+
+{
+  _id: 9,
+  roll: '0008',
+  name: 'Ankit',
+  section: '5CSE6',
+  CSE3001: 97,
+  CSE3075: 86,
+  CSE3078: 107,
+  CSE3082: 124,
+  CSE3069: 118,
+  CSE2024: 102,
+  CSE2052: 78
+}
+
+{
+  _id: 12,
+  roll: '0011',
+  name: 'Neha',
+  section: '5CSE6',
+  CSE3001: 91,
+  CSE3075: 88,
+  CSE3078: 97,
+  CSE3082: 121,
+  CSE3069: 114,
+  CSE2024: 104,
+  CSE2052: 87
+}
+
+
+///////// Logical operators//////////////
+
+
+db.Crud295.find({ $and:[{CSE3001: { $gt: 90 } }, {CSE3075: { $lt: 100 } }] })
+{
+  _id: 3,
+  roll: '0002',
+  name: 'Mohan',
+  section: '5CSE6',
+  CSE3001: 100,
+  CSE3075: 85,
+  CSE3078: 100,
+  CSE3082: 130,
+  CSE3069: 120,
+  CSE2024: 100,
+  CSE2052: 79
+}
+
+{
+  _id: 4,
+  roll: '0003',
+  name: 'Rohan',
+  section: '5CSE6',
+  CSE3001: 95,
+  CSE3075: 80,
+  CSE3078: 105,
+  CSE3082: 125,
+  CSE3069: 110,
+  CSE2024: 105,
+  CSE2052: 81
+}
+
+{
+  _id: 5,
+  roll: '0004',
+  name: 'Sohan',
+  section: '5CSE6',
+  CSE3001: 98,
+  CSE3075: 82,
+  CSE3078: 102,
+  CSE3082: 128,
+  CSE3069: 115,
+  CSE2024: 103,
+  CSE2052: 83
+}
+
+{
+  _id: 6,
+  roll: '0005',
+  name: 'Pooja',
+  section: '5CSE6',
+  CSE3001: 99,
+  CSE3075: 84,
+  CSE3078: 106,
+  CSE3082: 129,
+  CSE3069: 119,
+  CSE2024: 108,
+  CSE2052: 86
+}
+
+{
+  _id: 7,
+  roll: '0006',
+  name: 'Aman',
+  section: '5CSE6',
+  CSE3001: 94,
+  CSE3075: 81,
+  CSE3078: 101,
+  CSE3082: 123,
+  CSE3069: 112,
+  CSE2024: 107,
+  CSE2052: 88
+}
+
+{
+  _id: 8,
+  roll: '0007',
+  name: 'Ritu',
+  section: '5CSE6',
+  CSE3001: 96,
+  CSE3075: 87,
+  CSE3078: 104,
+  CSE3082: 132,
+  CSE3069: 117,
+  CSE2024: 110,
+  CSE2052: 80
+}
+
+{
+  _id: 9,
+  roll: '0008',
+  name: 'Ankit',
+  section: '5CSE6',
+  CSE3001: 97,
+  CSE3075: 86,
+  CSE3078: 107,
+  CSE3082: 124,
+  CSE3069: 118,
+  CSE2024: 102,
+  CSE2052: 78
+}
+
+{
+  _id: 10,
+  roll: '0009',
+  name: 'Priya',
+  section: '5CSE6',
+  CSE3001: 93,
+  CSE3075: 83,
+  CSE3078: 99,
+  CSE3082: 127,
+  CSE3069: 113,
+  CSE2024: 106,
+  CSE2052: 89
+}
+
+{
+  _id: 11,
+  roll: '0010',
+  name: 'Vikas',
+  section: '5CSE6',
+  CSE3001: 92,
+  CSE3075: 89,
+  CSE3078: 98,
+  CSE3082: 126,
+  CSE3069: 111,
+  CSE2024: 109,
+  CSE2052: 85
+}
+
+{
+  _id: 12,
+  roll: '0011',
+  name: 'Neha',
+  section: '5CSE6',
+  CSE3001: 91,
+  CSE3075: 88,
+  CSE3078: 97,
+  CSE3082: 121,
+  CSE3069: 114,
+  CSE2024: 104,
+  CSE2052: 87
+}
+
+
+db.Crud295.find({ $or: [{ CSE3001: { $gt: 90 } }, { CSE3075: { $lt: 100 } }] })
+{
+  _id: 3,
+  roll: '0002',
+  name: 'Mohan',
+  section: '5CSE6',
+  CSE3001: 100,
+  CSE3075: 85,
+  CSE3078: 100,
+  CSE3082: 130,
+  CSE3069: 120,
+  CSE2024: 100,
+  CSE2052: 79
+}
+
+{
+  _id: 4,
+  roll: '0003',
+  name: 'Rohan',
+  section: '5CSE6',
+  CSE3001: 95,
+  CSE3075: 80,
+  CSE3078: 105,
+  CSE3082: 125,
+  CSE3069: 110,
+  CSE2024: 105,
+  CSE2052: 81
+}
+
+{
+  _id: 5,
+  roll: '0004',
+  name: 'Sohan',
+  section: '5CSE6',
+  CSE3001: 98,
+  CSE3075: 82,
+  CSE3078: 102,
+  CSE3082: 128,
+  CSE3069: 115,
+  CSE2024: 103,
+  CSE2052: 83
+}
+
+{
+  _id: 6,
+  roll: '0005',
+  name: 'Pooja',
+  section: '5CSE6',
+  CSE3001: 99,
+  CSE3075: 84,
+  CSE3078: 106,
+  CSE3082: 129,
+  CSE3069: 119,
+  CSE2024: 108,
+  CSE2052: 86
+}
+
+{
+  _id: 7,
+  roll: '0006',
+  name: 'Aman',
+  section: '5CSE6',
+  CSE3001: 94,
+  CSE3075: 81,
+  CSE3078: 101,
+  CSE3082: 123,
+  CSE3069: 112,
+  CSE2024: 107,
+  CSE2052: 88
+}
+
+{
+  _id: 8,
+  roll: '0007',
+  name: 'Ritu',
+  section: '5CSE6',
+  CSE3001: 96,
+  CSE3075: 87,
+  CSE3078: 104,
+  CSE3082: 132,
+  CSE3069: 117,
+  CSE2024: 110,
+  CSE2052: 80
+}
+
+{
+  _id: 9,
+  roll: '0008',
+  name: 'Ankit',
+  section: '5CSE6',
+  CSE3001: 97,
+  CSE3075: 86,
+  CSE3078: 107,
+  CSE3082: 124,
+  CSE3069: 118,
+  CSE2024: 102,
+  CSE2052: 78
+}
+
+{
+  _id: 10,
+  roll: '0009',
+  name: 'Priya',
+  section: '5CSE6',
+  CSE3001: 93,
+  CSE3075: 83,
+  CSE3078: 99,
+  CSE3082: 127,
+  CSE3069: 113,
+  CSE2024: 106,
+  CSE2052: 89
+}
+
+{
+  _id: 11,
+  roll: '0010',
+  name: 'Vikas',
+  section: '5CSE6',
+  CSE3001: 92,
+  CSE3075: 89,
+  CSE3078: 98,
+  CSE3082: 126,
+  CSE3069: 111,
+  CSE2024: 109,
+  CSE2052: 85
+}
+
+{
+  _id: 11,
+  roll: '0010',
+  name: 'Vikas',
+  section: '5CSE6',
+  CSE3001: 92,
+  CSE3075: 89,
+  CSE3078: 98,
+  CSE3082: 126,
+  CSE3069: 111,
+  CSE2024: 109,
+  CSE2052: 85
+}
+
+
+db.Crud295.find({ CSE3001: { $not: { $lt: 90 } } })
+{
+  _id: 3,
+  roll: '0002',
+  name: 'Mohan',
+  section: '5CSE6',
+  CSE3001: 100,
+  CSE3075: 85,
+  CSE3078: 100,
+  CSE3082: 130,
+  CSE3069: 120,
+  CSE2024: 100,
+  CSE2052: 79
+}
+
+{
+  _id: 4,
+  roll: '0003',
+  name: 'Rohan',
+  section: '5CSE6',
+  CSE3001: 95,
+  CSE3075: 80,
+  CSE3078: 105,
+  CSE3082: 125,
+  CSE3069: 110,
+  CSE2024: 105,
+  CSE2052: 81
+}
+
+{
+  _id: 5,
+  roll: '0004',
+  name: 'Sohan',
+  section: '5CSE6',
+  CSE3001: 98,
+  CSE3075: 82,
+  CSE3078: 102,
+  CSE3082: 128,
+  CSE3069: 115,
+  CSE2024: 103,
+  CSE2052: 83
+}
+
+{
+  _id: 6,
+  roll: '0005',
+  name: 'Pooja',
+  section: '5CSE6',
+  CSE3001: 99,
+  CSE3075: 84,
+  CSE3078: 106,
+  CSE3082: 129,
+  CSE3069: 119,
+  CSE2024: 108,
+  CSE2052: 86
+}
+
+{
+  _id: 7,
+  roll: '0006',
+  name: 'Aman',
+  section: '5CSE6',
+  CSE3001: 94,
+  CSE3075: 81,
+  CSE3078: 101,
+  CSE3082: 123,
+  CSE3069: 112,
+  CSE2024: 107,
+  CSE2052: 88
+}
+
+{
+  _id: 8,
+  roll: '0007',
+  name: 'Ritu',
+  section: '5CSE6',
+  CSE3001: 96,
+  CSE3075: 87,
+  CSE3078: 104,
+  CSE3082: 132,
+  CSE3069: 117,
+  CSE2024: 110,
+  CSE2052: 80
+}
+
+{
+  _id: 9,
+  roll: '0008',
+  name: 'Ankit',
+  section: '5CSE6',
+  CSE3001: 97,
+  CSE3075: 86,
+  CSE3078: 107,
+  CSE3082: 124,
+  CSE3069: 118,
+  CSE2024: 102,
+  CSE2052: 78
+}
+
+{
+  _id: 10,
+  roll: '0009',
+  name: 'Priya',
+  section: '5CSE6',
+  CSE3001: 93,
+  CSE3075: 83,
+  CSE3078: 99,
+  CSE3082: 127,
+  CSE3069: 113,
+  CSE2024: 106,
+  CSE2052: 89
+}
+
+{
+  _id: 11,
+  roll: '0010',
+  name: 'Vikas',
+  section: '5CSE6',
+  CSE3001: 92,
+  CSE3075: 89,
+  CSE3078: 98,
+  CSE3082: 126,
+  CSE3069: 111,
+  CSE2024: 109,
+  CSE2052: 85
+}
+
+{
+  _id: 11,
+  roll: '0010',
+  name: 'Vikas',
+  section: '5CSE6',
+  CSE3001: 92,
+  CSE3075: 89,
+  CSE3078: 98,
+  CSE3082: 126,
+  CSE3069: 111,
+  CSE2024: 109,
+  CSE2052: 85
+}
+
+
+
+db.Crud295.find({ $nor: [{CSE3001: { $gt: 90 } }, {CSE3075: { $lt: 100 } }] })
+
+
+
+///////////////////////Update Operation///////////////////////////////
+
+
+db.Crud295.updateOne({roll:'0002'}, {$set: {section:'5CSE4'}});
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+
+db.Crud295.find({roll:'0002'})
+{
+  _id: 3,
+  roll: '0002',
+  name: 'Mohan',
+  section: '5CSE4',
+  CSE3001: 100,
+  CSE3075: 85,
+  CSE3078: 100,
+  CSE3082: 130,
+  CSE3069: 120,
+  CSE2024: 100,
+  CSE2052: 79
+}
+
+
+db.Crud295.updateMany({section:'5CSE6'},{$inc:{CSE3001: 5}});
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 9,
+  modifiedCount: 9,
+  upsertedCount: 0
+}
+
+
+db.Crud295.find({section:'5CSE6'})
+{
+  _id: 4,
+  roll: '0003',
+  name: 'Rohan',
+  section: '5CSE6',
+  CSE3001: 100,
+  CSE3075: 80,
+  CSE3078: 105,
+  CSE3082: 125,
+  CSE3069: 110,
+  CSE2024: 105,
+  CSE2052: 81
+}
+
+{
+  _id: 5,
+  roll: '0004',
+  name: 'Sohan',
+  section: '5CSE6',
+  CSE3001: 103,
+  CSE3075: 82,
+  CSE3078: 102,
+  CSE3082: 128,
+  CSE3069: 115,
+  CSE2024: 103,
+  CSE2052: 83
+}
+
+{
+  _id: 6,
+  roll: '0005',
+  name: 'Pooja',
+  section: '5CSE6',
+  CSE3001: 104,
+  CSE3075: 84,
+  CSE3078: 106,
+  CSE3082: 129,
+  CSE3069: 119,
+  CSE2024: 108,
+  CSE2052: 86
+}
+
+{
+  _id: 7,
+  roll: '0006',
+  name: 'Aman',
+  section: '5CSE6',
+  CSE3001: 99,
+  CSE3075: 81,
+  CSE3078: 101,
+  CSE3082: 123,
+  CSE3069: 112,
+  CSE2024: 107,
+  CSE2052: 88
+}
+
+{
+  _id: 8,
+  roll: '0007',
+  name: 'Ritu',
+  section: '5CSE6',
+  CSE3001: 101,
+  CSE3075: 87,
+  CSE3078: 104,
+  CSE3082: 132,
+  CSE3069: 117,
+  CSE2024: 110,
+  CSE2052: 80
+}
+
+{
+  _id: 9,
+  roll: '0008',
+  name: 'Ankit',
+  section: '5CSE6',
+  CSE3001: 102,
+  CSE3075: 86,
+  CSE3078: 107,
+  CSE3082: 124,
+  CSE3069: 118,
+  CSE2024: 102,
+  CSE2052: 78
+}
+
+{
+  _id: 10,
+  roll: '0009',
+  name: 'Priya',
+  section: '5CSE6',
+  CSE3001: 98,
+  CSE3075: 83,
+  CSE3078: 99,
+  CSE3082: 127,
+  CSE3069: 113,
+  CSE2024: 106,
+  CSE2052: 89
+}
+
+{
+  _id: 11,
+  roll: '0010',
+  name: 'Vikas',
+  section: '5CSE6',
+  CSE3001: 97,
+  CSE3075: 89,
+  CSE3078: 98,
+  CSE3082: 126,
+  CSE3069: 111,
+  CSE2024: 109,
+  CSE2052: 85
+}
+
+{
+  _id: 12,
+  roll: '0011',
+  name: 'Neha',
+  section: '5CSE6',
+  CSE3001: 96,
+  CSE3075: 88,
+  CSE3078: 97,
+  CSE3082: 121,
+  CSE3069: 114,
+  CSE2024: 104,
+  CSE2052: 87
+}
+
+
+db.Crud295.replaceOne({roll:'0002'},{roll:'0002',name:'NewName_Vishnu',section:'5CSE2',CSE3001:85});
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+
+
+db.Crud295.find({roll:'0002'})
+{
+  _id: 3,
+  roll: '0002',
+  name: 'NewName_Vishnu',
+  section: '5CSE2',
+  CSE3001: 85
+}
+
+
+/////////////////delete operation//////////////////
+
+db.Crud295.deleteOne({roll:'0001'});
+{
+  acknowledged: true,
+  deletedCount: 1
+}
+
+db.Crud295.deleteMany({section:'5CSE6'});
+{
+  acknowledged: true,
+  deletedCount: 9
+}
