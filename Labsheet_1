@@ -1,1 +1,63 @@
+test> show dbs
+admin    40.00 KiB
+config  108.00 KiB
+cse295   72.00 KiB
+local    40.00 KiB
+test> use cse295
+switched to db cse295
+cse295> show collections
+Student
+cse295> db.Student.find({Name:'Vishnu'})
+[
+  {
+    _id: ObjectId("64f1954a8042d1baabacba61"),
+    Name: 'Vishnu',
+    RollNo: '20211cse0295',
+    Section: '5cse5',
+    Marks: '99'
+  }
+]
+cse295> db.Student.find({RollNo:'20211cse0295'})
+[
+  {
+    _id: ObjectId("64f1954a8042d1baabacba61"),
+    Name: 'Vishnu',
+    RollNo: '20211cse0295',
+    Section: '5cse5',
+    Marks: '99'
+  }
+]
+cse295> db.Student.find({Marks:'100'})
+
+cse295> db.Student.find({Marks:'89'})
+[
+  {
+    _id: ObjectId("64f1954a8042d1baabacba62"),
+    Name: 'manu',
+    RollNo: '20211cse0299',
+    Section: '5cse5',
+    Marks: '89'
+  }
+]
+cse295> db.Student.insertOne({Marks:'100','Name':'Bhanu'})
+{
+  acknowledged: true,
+  insertedId: ObjectId("64f19fb3dbc3732a08ca541b")
+}
+
+cse295> db.Student.insertOne([{'Name':'Bhanu P K','RollNo':'20211cse345','Marks':'98'},])
+{
+  acknowledged: true,
+  insertedId: ObjectId("64f1a060dbc3732a08ca541d")
+}
+cse295> show collections
+Student
+cse295> db.Student.find({Name:'Bhanu'})
+[
+  {
+    _id: ObjectId("64f19fb3dbc3732a08ca541b"),
+    Marks: '100',
+    Name: 'Bhanu'
+  }
+]
 
